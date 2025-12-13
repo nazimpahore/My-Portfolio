@@ -968,6 +968,21 @@ section {
     gap: 2rem;
 }
 
+.projects-cta {
+    margin-top: 3rem;
+    text-align: center;
+}
+
+.projects-cta .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.projects-cta .btn i {
+    font-size: 1.2rem;
+}
+
 .project-card {
     background: white;
     border-radius: 16px;
