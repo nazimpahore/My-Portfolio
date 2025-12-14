@@ -1755,6 +1755,10 @@ section {
         padding: 60px 20px;
     }
 
+    .skills {
+        padding: 50px 20px;
+    }
+
     .nav-right {
         gap: 1rem;
     }
@@ -1862,6 +1866,11 @@ section {
     .section-subtitle {
         font-size: 1rem;
         padding: 0 10px;
+    }
+
+    .skills .section-subtitle {
+        font-size: 0.9rem;
+        margin: -0.5rem auto 1.5rem;
     }
 
     .about-stats {
@@ -2066,14 +2075,38 @@ section {
         height: 240px;
     }
 
+    .skills {
+        padding: 40px 15px;
+    }
+
+    .skills .section-title {
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .skills .section-subtitle {
+        font-size: 0.85rem;
+        margin: -0.25rem auto 1.25rem;
+    }
+
     .section-title {
         font-size: 1.85rem;
         margin-bottom: 3rem;
     }
 
+    .skills .section-title {
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+    }
+
     .section-subtitle {
         font-size: 0.95rem;
         margin: -1.5rem auto 2.5rem;
+    }
+
+    .skills .section-subtitle {
+        font-size: 0.85rem;
+        margin: -0.25rem auto 1.25rem;
     }
 
     .about-text p {
@@ -2256,6 +2289,60 @@ section {
         width: 45px;
         height: 45px;
         font-size: 1rem;
+    }
+}
+
+/* Mobile Devices - 416px */
+@media (max-width: 416px) {
+    .skills {
+        padding: 30px 10px;
+    }
+
+    .skills .section-title {
+        font-size: 1.3rem;
+        margin-bottom: 0.35rem;
+    }
+
+    .skills .section-subtitle {
+        font-size: 0.75rem;
+        margin: -0.15rem auto 0.85rem;
+    }
+
+    .skills-grid {
+        grid-template-columns: 1fr;
+        gap: 0.5rem;
+    }
+
+    .skill-card {
+        padding: 0.85rem 0.6rem;
+        border-radius: 8px;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    }
+
+    .skill-card:hover {
+        transform: translateY(-1px);
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
+    }
+
+    .skill-icon {
+        font-size: 1.75rem;
+        margin-bottom: 0.4rem;
+    }
+
+    .skill-card h3 {
+        font-size: 0.8rem;
+        margin-bottom: 0.35rem;
+        font-weight: 600;
+    }
+
+    .skill-percentage {
+        font-size: 0.95rem;
+        margin-top: 0.35rem;
+    }
+
+    .skill-bar {
+        height: 4px;
+        margin-top: 0.4rem;
     }
 }
 
