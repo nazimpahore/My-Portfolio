@@ -264,7 +264,7 @@ body {
     min-height: 100vh;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     padding: 120px 20px 60px;
     background: linear-gradient(135deg, #ffffff 0%, #f8fafc 50%, #f1f5f9 100%);
     position: relative;
@@ -313,17 +313,20 @@ body {
 }
 
 .hero-content {
-    flex: 1;
+    max-width: 1000px;
+    text-align: center;
     z-index: 1;
+    padding: 0 20px;
 }
 
 .hero-greeting {
-    font-size: 1.1rem;
+    font-size: 1.25rem;
     color: var(--primary-color);
     font-weight: 600;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.75rem;
     animation: fadeInUp 0.8s cubic-bezier(0.4, 0, 0.2, 1);
-    letter-spacing: 0.02em;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
 }
 
 [data-theme="dark"] .hero-greeting {
@@ -331,9 +334,9 @@ body {
 }
 
 .hero-title {
-    font-size: 3.25rem;
+    font-size: 4rem;
     font-weight: 800;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
     line-height: 1.1;
     letter-spacing: -0.03em;
     animation: fadeInUp 0.8s cubic-bezier(0.4, 0, 0.2, 1) 0.1s both;
@@ -349,16 +352,17 @@ body {
 }
 
 .hero-subtitle {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     color: var(--text-light);
     font-weight: 600;
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
     letter-spacing: -0.02em;
     animation: fadeInUp 0.8s cubic-bezier(0.4, 0, 0.2, 1) 0.2s both;
     line-height: 1.4;
-    min-height: 2rem;
+    min-height: 2.5rem;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .typing-text {
@@ -383,10 +387,12 @@ body {
 }
 
 .hero-description {
-    font-size: 1.125rem;
+    font-size: 1.2rem;
     color: var(--text-lighter);
-    margin-bottom: 2.5rem;
-    max-width: 550px;
+    margin-bottom: 3rem;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
     line-height: 1.8;
     animation: fadeInUp 0.8s cubic-bezier(0.4, 0, 0.2, 1) 0.3s both;
 }
@@ -397,6 +403,7 @@ body {
     margin-bottom: 2rem;
     animation: fadeInUp 0.8s cubic-bezier(0.4, 0, 0.2, 1) 0.4s both;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .btn {
@@ -482,6 +489,7 @@ body {
     display: flex;
     gap: 1rem;
     animation: fadeInUp 0.8s cubic-bezier(0.4, 0, 0.2, 1) 0.5s both;
+    justify-content: center;
 }
 
 .social-links a {
@@ -1014,6 +1022,17 @@ section {
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     position: relative;
     overflow: hidden;
+}
+
+.project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.project-card:hover .project-image img {
+    transform: scale(1.1);
 }
 
 .project-card:nth-child(1) .project-image {
